@@ -1,0 +1,12 @@
+<!doctype html>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<body>
+    <center> <h1> Puzzle 1 </h1> </center>
+    <p> For every puzzle, in order to get to the next puzzle, add the following <b> /puzzleanswerhere </b> to the end of the base URL. </p>
+    <p> If you do not refersh the puzzle page for 10 minutes, a hint will appear </p>
+    <p> The answer to this puzzle is the title of the next puzzle. </p>
+</body>
+<script>
+var hint = "If the title of this puzzle is Puzzle 1, what is the title of the next puzzle?"
+setTimeout(function() { alert(hint); }, 1000*60*10);
+</script>
